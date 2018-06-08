@@ -1,0 +1,89 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+    font-size: 1.4rem; /* 1.4 rem vaut 14px */
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    background-image: url('child.jpg');
+    background-size: cover;
+    color: rgb(245,245,245);
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    display: flex;
+    flex: 1;
+}
+
+.counterDown {
+    margin: auto;
+}
+
+.counterDown h1 {
+    font-size: 4rem;
+}
+
+hr {
+    background-color: rgba(255,255,255, 0.8);
+}
+
+#demo {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.6rem;
+    margin: auto;
+}
+
+#jours, #heures, #minutes, #secondes  {
+    font-family: "Roboto Mono", sans-serif;
+    font-size: 4rem;
+    height: 10rem;
+    margin-right: 1rem;
+    width: 100%;
+    color: rgb(245,245,245);
+    background-color: rgba(245,245,245, 0.5);
+    font-weight: bold;
+    text-align: center !important;
+    padding: 0;
+    
+}
+
+#infos {
+    color: rgb(245,245,245);
+    display: flex;
+    font-size: 1.6rem;
+    padding: auto;
+    text-align: center;
+}
+
+.infos-jours, .infos-heures, .infos-minutes, .infos-secondes {
+    font-family: "Roboto Mono", sans-serif;
+    margin: auto;
+    margin-top: -3rem;
+    width: 8rem;
+}
+
+/* Footer */
+footer {
+    border-top: 1px solid rgba(255,255,255, 0.5);
+    font-size: 1.3rem;
+    padding-top: 0.6rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}

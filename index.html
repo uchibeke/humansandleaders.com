@@ -1,0 +1,82 @@
+<!-- BootStrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+
+<body>
+    <div class="container-fluid wrapper">
+        <!-- Content -->
+        <div class="main-content row">
+            <div class="counterDown text-center">
+                <h1>Humans and Leaders</h1>
+                <h3>I am human. You are human. We are humans.</h3>
+                <!-- <h1>COMING SOON</h1> -->
+                <hr>
+                <div id="demo" class="col-xs-12">
+                    <div id="jours" class="text-center"></div>
+                    <div id="heures" class="text-center"></div>
+                    <div id="minutes" class="text-center"></div>
+                    <div id="secondes" class="text-center"></div>
+                </div>
+                <div id="infos" class="col-xs-12">
+                    <div class="infos-jours">Days</div>
+                    <div class="infos-heures">Hours</div>
+                    <div class="infos-minutes">Minutes</div>
+                    <div class="infos-secondes">Seconds</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <footer class="text-center">
+            <p>Copyright © 2018 Humans and Leaders </p>
+        </footer>
+    </div>
+    
+    <!-- JavaScript -->
+    <script type="text/javascript">
+        // Date de fin
+        var countDownDate = new Date('Jul 30, 2018 00:00:00').getTime();
+        
+        // Update toutes les 1 secondes
+        var x = setInterval(function() {
+            
+            // Récupération de la date du jour
+            var now = new Date().getTime();
+            
+            // Calcul de la distance entre aujourd'hui et la fin
+            var distance = countDownDate - now;
+            
+            //Calcul des temps
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            
+            var hours = Math.floor ((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            // Affichage du résultat dans l'id=demo
+            document.getElementById("jours").innerHTML = days;
+            document.getElementById("heures").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("secondes").innerHTML = seconds;
+            
+            // Si le compteur arrive à la fin
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "Launced";
+            }
+        }, 1000);
+    </script>
+    
+    <script type="text/javascript">
+        var date = new Date();
+        var annee = date.getFullYear();
+        
+        document.getElementById('annee').innerHTML = annee;
+    </script>
+    
+</body>
