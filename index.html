@@ -100,9 +100,9 @@
             
             // Affichage du résultat dans l'id=demo
             document.getElementById("jours").innerHTML = days;
-            document.getElementById("heures").innerHTML = hours;
-            document.getElementById("minutes").innerHTML = minutes;
-            document.getElementById("secondes").innerHTML = seconds;
+            document.getElementById("heures").innerHTML = ("0" + hours).slice(-2);
+            document.getElementById("minutes").innerHTML = ("0" + minutes).slice(-2);
+            document.getElementById("secondes").innerHTML = ("0" + seconds).slice(-2);
             
             // Si le compteur arrive à la fin
             if (distance < 0) {
