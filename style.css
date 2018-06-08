@@ -56,7 +56,7 @@ hr {
 
 #jours, #heures, #minutes, #secondes  {
     font-family: "Roboto Mono", sans-serif;
-    font-size: 4rem;
+    font-size: 3rem;
     height: 10rem;
     margin-right: 0.5rem;
     margin-left: 0.5rem;
@@ -82,6 +82,7 @@ hr {
     margin: auto;
     margin-top: -3rem;
     width: 100%;
+    font-size: 0.7rem;
 }
 
 /* Footer */
