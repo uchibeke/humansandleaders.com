@@ -18,7 +18,7 @@ body {
 
 .wrapper {
     display: flex;
-    background-image: url('child.jpg');
+    background-image: url('suit.jpg');
     background-size: cover;
     color: rgb(245,245,245);
     flex-direction: column;
@@ -36,6 +36,11 @@ body {
 
 .counterDown h1 {
     font-size: 4rem;
+    margin-bottom: -10px;
+}
+
+.counterDown h3 {
+    font-weight: thin;
 }
 
 hr {
@@ -53,7 +58,8 @@ hr {
     font-family: "Roboto Mono", sans-serif;
     font-size: 4rem;
     height: 10rem;
-    margin-right: 1rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
     width: 100%;
     color: rgb(245,245,245);
     background-color: rgba(245,245,245, 0.5);
@@ -75,7 +81,7 @@ hr {
     font-family: "Roboto Mono", sans-serif;
     margin: auto;
     margin-top: -3rem;
-    width: 8rem;
+    width: 100%;
 }
 
 /* Footer */
